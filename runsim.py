@@ -1,7 +1,7 @@
 import yahoosim 
 import timeucb 
 
-mypolicy = timeucb.timeUCBpolicy(100)
+mypolicy = timeucb.timeUCBpolicy(10000)
 mysim = yahoosim.YahooBanditSimulator(mypolicy, 'log_ucbextract', writeinterval=100) 
 
-mysim.simulateFile('yextract')
+mysim.simulateFile('yextract_big')
