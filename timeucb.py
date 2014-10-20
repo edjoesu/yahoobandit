@@ -29,7 +29,7 @@ class timeUCBpolicy:
                 self.arms[arm]=armstats(self.maxArmNumber, self.currentBin)
                 
                 
-        return max(self.arms, key=lambda aa: self.arms[aa].index)
+        return max(armChoices, key=lambda aa: self.arms[aa].index)
     
     def timestampToBin(self,timestamp):
         return int((int(timestamp) - self.startTime)/self.timegroup)
