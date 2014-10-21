@@ -105,7 +105,7 @@ class timeUCBpolicy:
         }        
         
         for (nn in 1:i) {
-        y[nn] ~ bernoulli(inv_logit(eta[a[nn]]+j*theta_temp[t[nn]]));
+        y[nn] ~ bernoulli(inv_logit(eta[a[nn]]+theta_temp[t[nn]]));
         }
         }
         """   
